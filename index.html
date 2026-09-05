@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nesma Hesham — Software Engineer, Front-End Developer, and AI Enthusiast.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Nesma Hesham | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ==================== HEADER / NAVIGATION ==================== -->
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Nesma Hesham home">
+        <span class="brand-mark">N</span>
+        <span>Nesma<span class="brand-dot">.</span></span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" data-i18n="nav.home">Home</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode"
+          title="Toggle theme">☾</button>
+        <button class="lang-btn" id="languageToggle" type="button" aria-label="Switch language">عربي</button>
+        <button class="menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== HERO ==================== -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="eyebrow" data-i18n="hero.eyebrow">SOFTWARE ENGINEER • FRONT-END • AI</span>
+          <h1 data-i18n="hero.title">Building digital experiences with code, creativity & AI.</h1>
+          <p class="hero-text" data-i18n="hero.text">
+            Computer Science student at Benha University, passionate about software engineering,
+            front-end development, AI, and problem solving.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects" data-i18n="hero.projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact" data-i18n="hero.contact">Let's Connect</a>
+          </div>
+
+          <div class="hero-meta">
+            <span><strong>3.83</strong><small data-i18n="hero.gpa">/ 4.00 GPA</small></span>
+            <span class="meta-divider"></span>
+            <span><strong>2027</strong><small data-i18n="hero.graduation">Expected Graduation</small></span>
+            <span class="meta-divider"></span>
+            <span><strong data-i18n="hero.open">Open</strong><small data-i18n="hero.opportunities">to
+                opportunities</small></span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <div class="photo-frame">
+            <div class="photo-glow"></div>
+            <img src="assets/profile.jpeg" alt="Nesma Hesham" class="profile-photo">
+          </div>
+          <div class="floating-card card-top">
+            <span class="floating-icon">⚡</span>
+            <div><strong>React</strong><small>Front-End</small></div>
+          </div>
+          <div class="floating-card card-bottom">
+            <span class="floating-icon">✦</span>
+            <div><strong>AI</strong><small>Deep Learning</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-i18n="about.eyebrow">ABOUT ME</span>
+          <h2 data-i18n="about.title">A developer who enjoys turning ideas into real products.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p data-i18n="about.p1">
+              I'm Nesma Hesham, a Computer Science student at Benha University (AI Track) with a strong
+              interest in software engineering, front-end development, artificial intelligence, and problem solving.
+            </p>
+            <p data-i18n="about.p2">
+              I enjoy building practical applications, learning new technologies, and sharing what I learn
+              through mentoring and technical communities.
+            </p>
+            <div class="about-highlights">
+              <div><span>01</span><strong data-i18n="about.h1">Build</strong><small data-i18n="about.h1s">Web & AI
+                  projects</small></div>
+              <div><span>02</span><strong data-i18n="about.h2">Learn</strong><small data-i18n="about.h2s">New tools &
+                  technologies</small></div>
+              <div><span>03</span><strong data-i18n="about.h3">Share</strong><small data-i18n="about.h3s">Mentoring &
+                  community</small></div>
+            </div>
+          </div>
+
+          <div class="about-card reveal">
+            <div class="about-card-header">
+              <span class="status-dot"></span>
+              <span data-i18n="about.available">Currently learning & building</span>
+            </div>
+            <ul class="check-list">
+              <li>React & modern Front-End</li>
+              <li>Artificial Intelligence & Deep Learning</li>
+              <li>Problem Solving & Algorithms</li>
+              <li>Software Engineering</li>
+              <li>Technical Mentoring</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow" data-i18n="skills.eyebrow">TECH STACK</span>
+          <h2 data-i18n="skills.title">Tools I use to bring ideas to life.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <span class="skill-number">01</span>
+            <h3 data-i18n="skills.frontend">Front-End Development</h3>
+            <p>React, Vite, HTML5, CSS3, Tailwind CSS, Material UI, JavaScript</p>
+            <div class="tag-list"><span>React</span><span>Vite</span><span>Tailwind</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-number">02</span>
+            <h3 data-i18n="skills.ai">AI & Machine Learning</h3>
+            <p>TensorFlow, Keras, CNN, MobileNetV2, Transfer Learning, Data Augmentation</p>
+            <div class="tag-list"><span>TensorFlow</span><span>CNN</span><span>Keras</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-number">03</span>
+            <h3 data-i18n="skills.cs">Computer Science</h3>
+            <p>Data Structures, OOP, Algorithms, Problem Solving, Minimax, Alpha-Beta Pruning, MVC</p>
+            <div class="tag-list"><span>C++</span><span>Python</span><span>Java</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-number">04</span>
+            <h3 data-i18n="skills.tools">Tools & Platforms</h3>
+            <p>Git, GitHub, Firebase, Firestore, Streamlit, SQL and modern development workflows</p>
+            <div class="tag-list"><span>Git</span><span>Firebase</span><span>Streamlit</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <!-- ==================== PROJECTS ==================== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+
+        <div class="section-heading projects-heading reveal">
+          <div>
+            <span class="eyebrow" data-i18n="projects.eyebrow">
+              SELECTED WORK
+            </span>
+
+            <h2 data-i18n="projects.title">
+              Projects I'm proud of.
+            </h2>
+          </div>
+
+          <p data-i18n="projects.subtitle">
+            A selection of web, AI, and algorithmic projects.
+          </p>
+        </div>
+
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+
+            <div class="project-media media-ai">
+              <span class="media-label">AI / MACHINE LEARNING</span>
+              <div class="media-symbol">AI</div>
+            </div>
+
+            <div class="project-body">
+
+              <div class="project-topline">
+                <span>01</span>
+                <span>Python</span>
+              </div>
+
+              <h3 data-i18n="project.p1.title">
+                Student Performance Prediction
+              </h3>
+
+              <p data-i18n="project.p1.desc">
+                Machine Learning project focused on predicting student performance using data analysis and predictive
+                modeling.
+              </p>
+
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>Data Science</span>
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://github.com/Nesma-h/Student-Performance-Prediction" target="_blank"
+                  rel="noopener noreferrer" data-i18n="common.github">
+                  GitHub Repo ↗
+                </a>
+
+              </div>
+
+            </div>
+          </article>
+
+
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+
+            <div class="project-media media-algo">
+              <span class="media-label">ARTIFICIAL INTELLIGENCE</span>
+              <div class="media-symbol">αβ</div>
+            </div>
+
+            <div class="project-body">
+
+              <div class="project-topline">
+                <span>02</span>
+                <span>C++</span>
+              </div>
+
+              <h3 data-i18n="project.p2.title">
+                Dots and Boxes AI Game
+              </h3>
+
+              <p data-i18n="project.p2.desc">
+                An AI opponent for Dots and Boxes implemented using Minimax with Alpha-Beta Pruning.
+              </p>
+
+              <div class="project-tags">
+                <span>C++</span>
+                <span>Minimax</span>
+                <span>Alpha-Beta</span>
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://github.com/Nesma-h/Dots-and-Boxs-Ai-Game-" target="_blank" rel="noopener noreferrer"
+                  data-i18n="common.github">
+                  GitHub Repo ↗
+                </a>
+
+              </div>
+
+            </div>
+          </article>
+
+
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+
+            <div class="project-media media-js">
+              <span class="media-label">WEB DEVELOPMENT</span>
+              <div class="media-symbol">JS</div>
+            </div>
+
+            <div class="project-body">
+
+              <div class="project-topline">
+                <span>03</span>
+                <span>JavaScript</span>
+              </div>
+
+              <h3 data-i18n="project.p3.title">
+                Food Court
+              </h3>
+
+              <p data-i18n="project.p3.desc">
+                Interactive food ordering website built using HTML, CSS, JavaScript and jQuery.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>jQuery</span>
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://github.com/Nesma-h/Food-court" target="_blank" rel="noopener noreferrer"
+                  data-i18n="common.github">
+                  GitHub Repo ↗
+                </a>
+
+              </div>
+
+            </div>
+          </article>
+
+
+          <!-- Project 4 -->
+          <article class="project-card reveal">
+
+            <div class="project-media media-web">
+              <span class="media-label">REACT / E-COMMERCE</span>
+              <div class="media-symbol">{ }</div>
+            </div>
+
+            <div class="project-body">
+
+              <div class="project-topline">
+                <span>04</span>
+                <span>React</span>
+              </div>
+
+              <h3 data-i18n="project.p4.title">
+                React E-Commerce Platform
+              </h3>
+
+              <p data-i18n="project.p4.desc">
+                Full-featured e-commerce application with authentication, cart, wishlist, Firebase and Tailwind CSS.
+              </p>
+
+              <div class="project-tags">
+                <span>React</span>
+                <span>Firebase</span>
+                <span>Tailwind</span>
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://github.com/Nesma-h/E-Commerce-React-Project" target="_blank" rel="noopener noreferrer"
+                  data-i18n="common.github">
+                  GitHub Repo ↗
+                </a>
+
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow" data-i18n="experience.eyebrow">EXPERIENCE</span>
+          <h2 data-i18n="experience.title">Learning, building, and helping others grow.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jun 2026 — <span data-i18n="experience.present">Present</span></div>
+            <div class="timeline-card">
+              <span class="timeline-type" data-i18n="experience.role">CODING INSTRUCTOR</span>
+              <h3>Stemate</h3>
+              <p data-i18n="experience.desc">
+                Teaching Scratch, Python, HTML, CSS, JavaScript, MIT App Inventor, PictoBlox,
+                LEGO Spike Essential/Prime, and introductory Machine Learning concepts.
+                Designing coding competitions and interactive learning activities for students.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="activities reveal">
+          <h3 data-i18n="activities.title">Leadership & Activities</h3>
+          <div class="activity-grid">
+            <span>Problem Solving Coach — ECPC</span>
+            <span>Frontend Mentor — GDG on Campus</span>
+            <span>Judge — Codeavour Robotics Competition</span>
+            <span>Frontend Member — IEEE BUB Student Branch</span>
+            <span>Former PR Member — URL</span>
+            <span>Former Project Manager — Enactus</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION / TRAINING ==================== -->
+    <section class="section section-alt" id="education">
+      <div class="container two-column">
+        <div class="info-block reveal">
+          <span class="eyebrow" data-i18n="education.eyebrow">EDUCATION</span>
+          <h2 data-i18n="education.title">Benha University</h2>
+          <p data-i18n="education.degree">Faculty of Computers and Artificial Intelligence — AI Track</p>
+          <div class="big-stat">3.83<span>/4.00</span></div>
+          <p class="muted" data-i18n="education.graduation">Expected Graduation: 2027</p>
+        </div>
+
+        <div class="info-block reveal">
+          <span class="eyebrow" data-i18n="training.eyebrow">PROFESSIONAL TRAINING</span>
+          <ul class="training-list">
+            <li><span>01</span>DEPI Front-End React Track <small data-i18n="training.current">(Current)</small></li>
+            <li><span>02</span>Bravo Web Development Training <small>(2 Months)</small></li>
+            <li><span>03</span>ITI Introduction to Web Development</li>
+            <li><span>04</span>GDG Frontend Bootcamp</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="eyebrow" data-i18n="contact.eyebrow">GET IN TOUCH</span>
+          <h2 data-i18n="contact.title">Have an idea, opportunity, or just want to say hello?</h2>
+          <p data-i18n="contact.text">
+            I'm always interested in learning, collaborating, and building meaningful things.
+          </p>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/nesmaa-heesham" target="_blank" rel="noopener noreferrer">LinkedIn
+              ↗</a>
+            <a href="https://github.com/Nesma-h" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://codeforces.com/profile/N_esma" target="_blank" rel="noopener noreferrer">Codeforces ↗</a>
+            <a href="mailto:nesmaahh1@gmail.com">Email ↗</a>
+          </div>
+        </div>
+
+        <!-- HTML-only structure: connect this form to Formspree/Netlify/etc. if you want submissions. -->
+        <form class="contact-form reveal" action="https://formspree.io/f/xnpqbqez" method="POST">
+
+          <div class="form-row">
+
+            <label>
+
+              <span data-i18n="form.name">
+                Name
+              </span>
+
+              <input type="text" name="name" placeholder="Your name" data-i18n-placeholder="form.namePlaceholder"
+                required>
+
+            </label>
+
+
+            <label>
+
+              <span data-i18n="form.email">
+                Email
+              </span>
+
+              <input type="email" name="email" placeholder="you@example.com"
+                data-i18n-placeholder="form.emailPlaceholder" required>
+
+            </label>
+
+          </div>
+
+
+          <label>
+
+            <span data-i18n="form.subject">
+              Subject
+            </span>
+
+            <input type="text" name="subject" placeholder="How can I help?"
+              data-i18n-placeholder="form.subjectPlaceholder" required>
+
+          </label>
+
+
+          <label>
+
+            <span data-i18n="form.message">
+              Message
+            </span>
+
+            <textarea name="message" rows="6" placeholder="Write your message..."
+              data-i18n-placeholder="form.messagePlaceholder" required></textarea>
+
+          </label>
+
+
+          <button class="btn btn-primary form-submit" type="submit" data-i18n="form.send">
+            Send Message ↗
+          </button>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Nesma Hesham. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <a href="#top" data-i18n="footer.back">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
