@@ -229,7 +229,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
             "experience.desc":
                 "Teaching Scratch, Python, HTML, CSS, JavaScript, MIT App Inventor, PictoBlox, LEGO Spike Essential/Prime, and introductory Machine Learning concepts. Designing coding competitions and interactive learning activities for students.",
+            "experience.subtitle":
+                "Experiences, communities, mentoring and competitions that shaped my journey.",
 
+            "experience.gdg":
+                "Participating as a Front-End Mentor, helping learners understand web development concepts and sharing practical knowledge.",
+
+            "experience.icpcCoach":
+                "Participating as a coach in ICPC Benha Community and supporting students in problem solving and competitive programming.",
+
+            "experience.icpcTitle":
+                "ICPC Competition Journey",
+
+            "experience.icpcText":
+                "Participated in ICPC competitions three times, gaining valuable experience in teamwork, problem solving and competitive programming.",
+
+            "experience.icpc1":
+                "First participation",
+
+            "experience.icpc2":
+                "Second participation",
+
+            "experience.icpc3":
+                "Third participation",
             "activities.title":
                 "Leadership & Activities",
 
@@ -459,7 +481,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
             "experience.desc":
                 "بدرّس Scratch وPython وHTML وCSS وJavaScript وMIT App Inventor وPictoBlox وLEGO Spike Essential/Prime، بالإضافة لمفاهيم Machine Learning للمبتدئين. وبصمم مسابقات Coding وأنشطة تفاعلية للطلاب.",
+            "experience.subtitle":
+                "تجارب ومجتمعات وMentoring ومسابقات كان ليها دور كبير في رحلتي.",
 
+            "experience.gdg":
+                "شاركت كـ Front-End Mentor في GDG، وساعدت المتعلمين في فهم مفاهيم تطوير الويب ومشاركة الخبرات العملية.",
+
+            "experience.icpcCoach":
+                "شاركت كـ Coach في ICPC Benha Community، وساعدت الطلاب في الـProblem Solving والـCompetitive Programming.",
+
+            "experience.icpcTitle":
+                "رحلتي في مسابقات ICPC",
+
+            "experience.icpcText":
+                "شاركت في مسابقات ICPC ثلاث مرات، واكتسبت خبرة كبيرة في الـTeamwork والـProblem Solving والـCompetitive Programming.",
+
+            "experience.icpc1":
+                "المشاركة الأولى",
+
+            "experience.icpc2":
+                "المشاركة الثانية",
+
+            "experience.icpc3":
+                "المشاركة الثالثة ك coach",
             "activities.title":
                 "القيادة والأنشطة",
 

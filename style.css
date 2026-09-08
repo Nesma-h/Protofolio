@@ -1336,3 +1336,199 @@ body[dir="rtl"] .check-list li::before {
     transition-duration: 0.01ms !important;
   }
 }
+/* =========================================================
+   EXPERIENCE IMAGE CARDS
+   ========================================================= */
+
+.experience-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 28px;
+  align-items: stretch;
+  padding: 0;
+  overflow: hidden;
+}
+
+.experience-image {
+  min-height: 250px;
+  overflow: hidden;
+  background: var(--bg-alt);
+}
+
+.experience-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  object-fit: cover;
+  transition: transform 450ms ease;
+}
+
+.experience-card:hover .experience-image img {
+  transform: scale(1.05);
+}
+
+.experience-content {
+  padding: 28px 28px 28px 0;
+}
+
+body[dir="rtl"] .experience-content {
+  padding: 28px 0 28px 28px;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 20px;
+}
+
+.experience-tags span {
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: .68rem;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   ICPC COMPETITION GALLERY
+   ========================================================= */
+
+.competition-section {
+  max-width: 900px;
+  margin: 80px auto 0;
+}
+
+.competition-heading {
+  margin-bottom: 28px;
+}
+
+.competition-heading h3 {
+  font-size: 1.5rem;
+  margin: 5px 0 8px;
+}
+
+.competition-heading p {
+  color: var(--muted);
+  max-width: 700px;
+  font-size: .88rem;
+}
+
+.competition-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.competition-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    border var(--transition);
+}
+
+.competition-card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--shadow);
+  border-color: rgba(108, 92, 231, .3);
+}
+
+.competition-image {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+  background: var(--bg-alt);
+}
+
+.competition-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 450ms ease;
+}
+
+.competition-card:hover .competition-image img {
+  transform: scale(1.06);
+}
+
+.competition-image span {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  width: 34px;
+  height: 34px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 10px;
+
+  background: rgba(8, 11, 22, .72);
+  color: white;
+
+  font-size: .7rem;
+  font-weight: 800;
+
+  backdrop-filter: blur(8px);
+}
+
+body[dir="rtl"] .competition-image span {
+  left: auto;
+  right: 12px;
+}
+
+.competition-info {
+  padding: 18px;
+}
+
+.competition-info h4 {
+  margin: 0 0 5px;
+  font-size: .92rem;
+}
+
+.competition-info p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .72rem;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 820px) {
+
+  .experience-card {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-image {
+    min-height: 260px;
+    max-height: 330px;
+  }
+
+  .experience-image img {
+    min-height: 260px;
+  }
+
+  .experience-content,
+  body[dir="rtl"] .experience-content {
+    padding: 24px;
+  }
+
+  .competition-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .competition-image {
+    height: 260px;
+  }
+}
