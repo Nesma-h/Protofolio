@@ -182,28 +182,28 @@ document.addEventListener("DOMContentLoaded", function () {
                 "A selection of web, AI, and algorithmic projects.",
 
             "project.p1.title":
-                "Garbage Classification Web App",
+                "Student Performance Prediction",
 
             "project.p1.desc":
-                "CNN and MobileNetV2-based waste classifier achieving 90% test accuracy and deployed with Streamlit.",
+                "Machine Learning project focused on predicting student performance using data analysis and predictive modeling.",
 
             "project.p2.title":
-                "React E-Commerce Platform",
+                "Dots and Boxes AI Game",
 
             "project.p2.desc":
-                "Full-featured e-commerce app with authentication, cart, wishlist, Firebase, and Tailwind CSS.",
-
-            "project.p3.title":
-                "Dots and Boxes AI",
-
-            "project.p3.desc":
                 "An AI opponent for Dots and Boxes implemented using Minimax with Alpha-Beta Pruning.",
 
-            "project.p4.title":
+            "project.p3.title":
                 "Food Court",
 
+            "project.p3.desc":
+                "Interactive food ordering website built using HTML, CSS, JavaScript and jQuery.",
+
+            "project.p4.title":
+                "React E-Commerce Platform",
+
             "project.p4.desc":
-                "Interactive JavaScript web application focused on a smooth and engaging user experience.",
+                "Full-featured e-commerce application with authentication, cart, wishlist, Firebase and Tailwind CSS.",
 
             "common.live":
                 "View Live ↗",
@@ -318,7 +318,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 "All rights reserved.",
 
             "footer.back":
-                "Back to top ↑"
+                "Back to top ↑",
+
+            "nav.cv": "CV ↗",
+            "hero.cv": "View My CV ↗",
+            "hero.downloadCv": "Download CV ↓",
         },
 
 
@@ -342,7 +346,9 @@ document.addEventListener("DOMContentLoaded", function () {
             "nav.contact":
                 "تواصل معي",
 
-
+            "nav.cv": "السيرة الذاتية ↗",
+            "hero.cv": "عرض الـCV ↗",
+            "hero.downloadCv": "تحميل الـCV ↓",
             "hero.eyebrow":
                 "هندسة برمجيات • Front-End • ذكاء اصطناعي",
 
@@ -434,29 +440,28 @@ document.addEventListener("DOMContentLoaded", function () {
                 "مجموعة من مشاريع الـWeb والـAI والـAlgorithms.",
 
             "project.p1.title":
-                "تطبيق تصنيف المخلفات",
+                "التنبؤ بأداء الطلاب",
 
             "project.p1.desc":
-                "نموذج لتصنيف المخلفات باستخدام CNN وMobileNetV2، حقق دقة اختبار 90% وتم نشره باستخدام Streamlit.",
+                "مشروع Machine Learning للتنبؤ بأداء الطلاب باستخدام تحليل البيانات وبناء نماذج تنبؤية.",
 
             "project.p2.title":
-                "منصة E-Commerce باستخدام React",
-
-            "project.p2.desc":
-                "تطبيق تجارة إلكترونية متكامل يحتوي على تسجيل الدخول والـCart والـWishlist باستخدام React وFirebase وTailwind CSS.",
-
-            "project.p3.title":
                 "Dots and Boxes AI",
 
-            "project.p3.desc":
+            "project.p2.desc":
                 "خصم ذكي للعبة Dots and Boxes باستخدام Minimax مع Alpha-Beta Pruning.",
 
-            "project.p4.title":
+            "project.p3.title":
                 "Food Court",
 
-            "project.p4.desc":
-                "تطبيق Web تفاعلي باستخدام JavaScript مع التركيز على تجربة مستخدم بسيطة وتفاعلية.",
+            "project.p3.desc":
+                "موقع تفاعلي لطلب الطعام باستخدام HTML وCSS وJavaScript وjQuery.",
 
+            "project.p4.title":
+                "منصة E-Commerce باستخدام React",
+
+            "project.p4.desc":
+                "تطبيق تجارة إلكترونية متكامل يحتوي على تسجيل الدخول والـCart والـWishlist باستخدام React وFirebase وTailwind CSS.",
             "common.live":
                 "المشروع Live ↗",
 
@@ -853,8 +858,23 @@ document.addEventListener("DOMContentLoaded", function () {
                             : "The form is ready, but you need to connect it to a service such as Formspree to receive messages."
                     );
                 }
+
             }
         );
+
     }
 
 });
+// Back to Top
+const backToTop = document.querySelector('a[href="#top"]');
+
+if (backToTop) {
+    backToTop.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}

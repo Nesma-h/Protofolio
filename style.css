@@ -1532,3 +1532,40 @@ body[dir="rtl"] .competition-image span {
     height: 260px;
   }
 }
+.nav-cv {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 9px 15px;
+
+  border: 1px solid var(--line);
+  border-radius: 10px;
+
+  color: var(--text);
+  background: var(--surface);
+
+  font-size: .78rem;
+  font-weight: 800;
+
+  transition: var(--transition);
+}
+
+.nav-cv:hover {
+  color: white;
+  background: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.btn-secondary:hover {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: white;
+}
