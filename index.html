@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Nesma Hesham — Software Engineer, Front-End Developer, and AI Enthusiast.">
-  <meta name="theme-color" content="#0b1020">
+  <meta name="theme-color" content="#0f0a15">
   <title>Nesma Hesham | Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +51,10 @@
       <div class="container hero-grid">
         <div class="hero-content reveal">
           <span class="eyebrow" data-i18n="hero.eyebrow">SOFTWARE ENGINEER • FRONT-END • AI</span>
-          <h1 data-i18n="hero.title">Building digital experiences with code, creativity & AI.</h1>
+          <h1>
+            <span class="hero-title-prefix">Building digital experiences with </span>
+            <span class="typewriter-text"></span>
+          </h1>
           <p class="hero-text" data-i18n="hero.text">
             Computer Science student at Benha University, passionate about software engineering,
             front-end development, AI, and problem solving.
@@ -59,7 +62,6 @@
 
           <div class="hero-actions">
             <a class="btn btn-primary" href="#projects" data-i18n="hero.projects">View Projects</a>
-
 
             <a href="assets/cv/Nesma-Hesham-CV.pdf" download="Nesma-Hesham-CV.pdf" class="btn btn-secondary">
               <span data-i18n="hero.downloadCv">Download CV ↓</span>
@@ -72,8 +74,7 @@
             <span class="meta-divider"></span>
             <span><strong>2027</strong><small data-i18n="hero.graduation">Expected Graduation</small></span>
             <span class="meta-divider"></span>
-            <span><strong data-i18n="hero.open">Open</strong><small data-i18n="hero.opportunities">to
-                opportunities</small></span>
+            <span><strong data-i18n="hero.open">Open</strong><small data-i18n="hero.opportunities">to opportunities</small></span>
           </div>
         </div>
 
@@ -115,12 +116,9 @@
               through mentoring and technical communities.
             </p>
             <div class="about-highlights">
-              <div><span>01</span><strong data-i18n="about.h1">Build</strong><small data-i18n="about.h1s">Web & AI
-                  projects</small></div>
-              <div><span>02</span><strong data-i18n="about.h2">Learn</strong><small data-i18n="about.h2s">New tools &
-                  technologies</small></div>
-              <div><span>03</span><strong data-i18n="about.h3">Share</strong><small data-i18n="about.h3s">Mentoring &
-                  community</small></div>
+              <div><span>01</span><strong data-i18n="about.h1">Build</strong><small data-i18n="about.h1s">Web & AI projects</small></div>
+              <div><span>02</span><strong data-i18n="about.h2">Learn</strong><small data-i18n="about.h2s">New tools & technologies</small></div>
+              <div><span>03</span><strong data-i18n="about.h3">Share</strong><small data-i18n="about.h3s">Mentoring & community</small></div>
             </div>
           </div>
 
@@ -187,243 +185,265 @@
 
         <div class="section-heading projects-heading reveal">
           <div>
-            <span class="eyebrow" data-i18n="projects.eyebrow">
-              SELECTED WORK
-            </span>
-
-            <h2 data-i18n="projects.title">
-              Projects I'm proud of.
-            </h2>
+            <span class="eyebrow" data-i18n="projects.eyebrow">SELECTED WORK</span>
+            <h2 data-i18n="projects.title">Featured Engineering Projects</h2>
           </div>
-
           <p data-i18n="projects.subtitle">
-            A selection of web, AI, and algorithmic projects.
+            A showcase of AI models, algorithmic solutions, and production-ready web applications.
           </p>
         </div>
 
+        <!-- ==================== WEB DEVELOPMENT PROJECTS ==================== -->
+        <div class="projects-category reveal">
+          <h3 class="category-title">
+            <span class="category-icon">⚡</span>
+            <span data-i18n="projects.cat_web">Web Development & Frontend Engineering</span>
+          </h3>
+          <div class="projects-grid">
 
-        <div class="projects-grid">
-
-          <!-- Project 1 -->
-          <article class="project-card reveal">
-
-            <div class="project-media media-ai">
-              <span class="media-label">AI / MACHINE LEARNING</span>
-              <div class="media-symbol">AI</div>
-            </div>
-
-            <div class="project-body">
-
-              <div class="project-topline">
-                <span>01</span>
-                <span>Python</span>
+            <!-- Web Project 1: React E-Commerce Platform -->
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/projects/ecommerce.png" alt="React E-Commerce Platform" class="project-img">
+                <span class="media-label">REACT & FIREBASE</span>
               </div>
-
-              <h3 data-i18n="project.p1.title">
-                Student Performance Prediction
-              </h3>
-
-              <p data-i18n="project.p1.desc">
-                Machine Learning project focused on predicting student performance using data analysis and predictive
-                modeling.
-              </p>
-
-              <div class="project-tags">
-                <span>Python</span>
-                <span>Machine Learning</span>
-                <span>Data Science</span>
+              <div class="project-body">
+                <div class="project-topline"><span>01</span><span>React</span></div>
+                <h3 data-i18n="project.p4.title">Full-Stack React E-Commerce Platform</h3>
+                <p data-i18n="project.p4.desc">Developed a scalable e-commerce application integrating Firebase authentication, real-time database state management, dynamic shopping cart, and Tailwind CSS UI components.</p>
+                <div class="project-tags"><span>React</span><span>Firebase</span><span>Tailwind CSS</span><span>State Management</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/Nesma-h/E-Commerce-React-Project" target="_blank" rel="noopener noreferrer" data-i18n="common.github">GitHub Repo ↗</a>
+                </div>
               </div>
+            </article>
 
-              <div class="project-links">
-
-                <a href="https://github.com/Nesma-h/Student-Performance-Prediction" target="_blank"
-                  rel="noopener noreferrer" data-i18n="common.github">
-                  GitHub Repo ↗
-                </a>
-
+            <!-- Web Project 2: Food Court -->
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/projects/food-court.png" alt="Food Court Ordering System" class="project-img">
+                <span class="media-label">INTERACTIVE WEB</span>
               </div>
-
-            </div>
-          </article>
-
-
-          <!-- Project 2 -->
-          <article class="project-card reveal">
-
-            <div class="project-media media-algo">
-              <span class="media-label">ARTIFICIAL INTELLIGENCE</span>
-              <div class="media-symbol">αβ</div>
-            </div>
-
-            <div class="project-body">
-
-              <div class="project-topline">
-                <span>02</span>
-                <span>C++</span>
+              <div class="project-body">
+                <div class="project-topline"><span>02</span><span>JavaScript & jQuery</span></div>
+                <h3 data-i18n="project.p3.title">Food Court Interactive Ordering Engine</h3>
+                <p data-i18n="project.p3.desc">Constructed an interactive food ordering web app with dynamic cart state calculation, responsive product filtering, and asynchronous UI updates using jQuery.</p>
+                <div class="project-tags"><span>JavaScript</span><span>jQuery</span><span>HTML5</span><span>CSS3</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/Nesma-h/Food-court" target="_blank" rel="noopener noreferrer" data-i18n="common.github">GitHub Repo ↗</a>
+                  <a href="https://nesma-h.github.io/Food-court/" target="_blank" rel="noopener noreferrer" data-i18n="common.live">Live Demo ↗</a>
+                </div>
               </div>
+            </article>
 
-              <h3 data-i18n="project.p2.title">
-                Dots and Boxes AI Game
-              </h3>
-
-              <p data-i18n="project.p2.desc">
-                An AI opponent for Dots and Boxes implemented using Minimax with Alpha-Beta Pruning.
-              </p>
-
-              <div class="project-tags">
-                <span>C++</span>
-                <span>Minimax</span>
-                <span>Alpha-Beta</span>
+            <!-- Web Project 3: GirlyHotel CSS Project -->
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/projects/girly-hotel.png" alt="GirlyHotel Page" class="project-img">
+                <span class="media-label">CSS / HOTEL PAGE</span>
               </div>
-
-              <div class="project-links">
-
-                <a href="https://github.com/Nesma-h/Dots-and-Boxs-Ai-Game-" target="_blank" rel="noopener noreferrer"
-                  data-i18n="common.github">
-                  GitHub Repo ↗
-                </a>
-
+              <div class="project-body">
+                <div class="project-topline"><span>03</span><span>HTML & CSS</span></div>
+                <h3 data-i18n="project.girlyhotel.title">GirlyHotel Luxury Page</h3>
+                <p data-i18n="project.girlyhotel.desc">A stylish, fully responsive hotel landing web page designed with elegant typography, custom CSS layouts, and interactive UI components.</p>
+                <div class="project-tags"><span>HTML5</span><span>CSS3 Architecture</span><span>Responsive Web</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/Nesma-h/GirlyHotel-CSSProject" target="_blank" rel="noopener noreferrer" data-i18n="common.github">GitHub Repo ↗</a>
+                </div>
               </div>
+            </article>
 
-            </div>
-          </article>
-
-
-          <!-- Project 3 -->
-          <article class="project-card reveal">
-
-            <div class="project-media media-js">
-              <span class="media-label">WEB DEVELOPMENT</span>
-              <div class="media-symbol">JS</div>
-            </div>
-
-            <div class="project-body">
-
-              <div class="project-topline">
-                <span>03</span>
-                <span>JavaScript</span>
+            <!-- Web Project 4: MissFolio IEEE -->
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/projects/missfolio.png" alt="MissFolio Professional ATS CV Generator" class="project-img">
+                <span class="media-label">IEEE BUB PROJECT</span>
               </div>
-
-              <h3 data-i18n="project.p3.title">
-                Food Court
-              </h3>
-
-              <p data-i18n="project.p3.desc">
-                Interactive food ordering website built using HTML, CSS, JavaScript and jQuery.
-              </p>
-
-              <div class="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>jQuery</span>
+              <div class="project-body">
+                <div class="project-topline"><span>04</span><span>HTML & CSS</span></div>
+                <h3 data-i18n="project.missfolio.title">MissFolio — ATS-Friendly CV Builder Platform</h3>
+                <p data-i18n="project.missfolio.desc">Responsive web-based portfolio and CV builder designed to help users create a professional online presence and showcase their skills, projects, and experience with ATS optimization.</p>
+                <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>UI/UX</span><span>ATS Optimization</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/Nesma-h/MissFolio---IEEE-project" target="_blank" rel="noopener noreferrer" data-i18n="common.github">GitHub Repo ↗</a>
+                  <a href="https://nesma-h.github.io/MissFolio---IEEE-project/" target="_blank" rel="noopener noreferrer" data-i18n="common.live">Live Demo ↗</a>
+                </div>
               </div>
+            </article>
 
-              <div class="project-links">
-
-                <a href="https://github.com/Nesma-h/Food-court" target="_blank" rel="noopener noreferrer"
-                  data-i18n="common.github">
-                  GitHub Repo ↗
-                </a>
-
+            <!-- Web Project 5: Gaming Website CSS -->
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/projects/css-project.png" alt="CSS Gaming Website Project" class="project-img">
+                <span class="media-label">FRONT-END UI</span>
               </div>
-
-            </div>
-          </article>
-
-
-          <!-- Project 4 -->
-          <article class="project-card reveal">
-            <div class="project-media media-web">
-              <span class="media-label">REACT / E-COMMERCE</span>
-              <div class="media-symbol">{ }</div>
-            </div>
-
-            <div class="project-body">
-
-              <div class="project-topline">
-                <span>04</span>
-                <span>React</span>
+              <div class="project-body">
+                <div class="project-topline"><span>05</span><span>CSS3 Architecture</span></div>
+                <h3 data-i18n="project.cssproj.title">Gaming Website - Advanced CSS Animations</h3>
+                <p data-i18n="project.cssproj.desc">A modern and responsive gaming-themed website designed to showcase games, tournaments, players, products, and live content through an engaging visual interface.</p>
+                <div class="project-tags"><span>CSS Animations</span><span>Custom Variables</span><span>Flexbox & Grid</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/Nesma-h/css-project" target="_blank" rel="noopener noreferrer" data-i18n="common.github">GitHub Repo ↗</a>
+                  <a href="https://nesma-h.github.io/css-project/" target="_blank" rel="noopener noreferrer" data-i18n="common.live">Live Demo ↗</a>
+                </div>
               </div>
+            </article>
 
-              <h3 data-i18n="project.p4.title">
-                React E-Commerce Platform
-              </h3>
-
-              <p data-i18n="project.p4.desc">
-                Full-featured e-commerce application with authentication, cart, wishlist, Firebase and Tailwind CSS.
-              </p>
-
-              <div class="project-tags">
-                <span>React</span>
-                <span>Firebase</span>
-                <span>Tailwind</span>
+            <!-- Web Project 6: Document Insurance -->
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/projects/document-insurance.png" alt="Document Insurance Web Platform" class="project-img">
+                <span class="media-label">WEB SYSTEM</span>
               </div>
-
-              <div class="project-links">
-
-                <a href="https://github.com/Nesma-h/E-Commerce-React-Project" target="_blank" rel="noopener noreferrer"
-                  data-i18n="common.github">
-                  GitHub Repo ↗
-                </a>
-
+              <div class="project-body">
+                <div class="project-topline"><span>06</span><span>JavaScript</span></div>
+                <h3 data-i18n="project.insurance.title">Insurance Management Portal</h3>
+                <p data-i18n="project.insurance.desc">Architected a responsive Web Application interface for document verification and insurance management featuring dynamic DOM manipulation and modular styling.</p>
+                <div class="project-tags"><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>DOM Manipulation</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/Nesma-h/Document-Incurance" target="_blank" rel="noopener noreferrer" data-i18n="common.github">GitHub Repo ↗</a>
+                  <a href="https://nesma-h.github.io/Ass-Day-6-7-DEPI/" target="_blank" rel="noopener noreferrer" data-i18n="common.live">Live Demo ↗</a>
+                </div>
               </div>
+            </article>
 
-            </div>
-          </article>
+            <!-- Web Project 7: DEPI Day 12 Assignment -->
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/projects/depi-day12.png" alt="DEPI Assignment Day 12" class="project-img">
+                <span class="media-label">DEPI FRONT-END</span>
+              </div>
+              <div class="project-body">
+                <div class="project-topline"><span>07</span><span>HTML & CSS</span></div>
+                <h3 data-i18n="project.depi12.title">DEPI Track — Advanced UI Component Design</h3>
+                <p data-i18n="project.depi12.desc">Implemented responsive interface components utilizing modern CSS Grid/Flexbox architectures and fluid design standards during the DEPI Front-End track.</p>
+                <div class="project-tags"><span>HTML5</span><span>CSS Grid</span><span>Flexbox</span><span>Responsive Web</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/Nesma-h/Ass-Day-6-7-DEPI" target="_blank" rel="noopener noreferrer" data-i18n="common.github">GitHub Repo ↗</a>
+                  <a href="https://nesma-h.github.io/Day12-DEPI_Assignment/" target="_blank" rel="noopener noreferrer" data-i18n="common.live">Live Demo ↗</a>
+                </div>
+              </div>
+            </article>
 
+          </div>
+        </div>
+
+        <!-- ==================== AI & ML PROJECTS ==================== -->
+        <div class="projects-category reveal" style="margin-top: 60px;">
+          <h3 class="category-title">
+            <span class="category-icon">✦</span>
+            <span data-i18n="projects.cat_ai">AI & Data Science Engineering</span>
+          </h3>
+
+          <div class="projects-grid">
+
+            <!-- AI Project 1: Student Performance Prediction -->
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/projects/student-performance.png" alt="Student Performance Prediction" class="project-img">
+                <span class="media-label">MACHINE LEARNING</span>
+              </div>
+              <div class="project-body">
+                <div class="project-topline"><span>01</span><span>Python</span></div>
+                <h3 data-i18n="project.p1.title">Student Performance Predictive Analytics</h3>
+                <p data-i18n="project.p1.desc">A machine learning project designed to predict student academic performance using supervised learning models, implementing predictive systems for pass/fail classification and grade estimation.</p>
+                <div class="project-tags"><span>Python</span><span>Scikit-Learn</span><span>Pandas</span><span>ML Algorithms</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/Nesma-h/Student-Performance-Prediction" target="_blank" rel="noopener noreferrer" data-i18n="common.github">GitHub Repo ↗</a>
+                  <a href="https://machine-learning---project-6pqvtojrvisumxepx8chay.streamlit.app/" target="_blank" rel="noopener noreferrer" data-i18n="common.live">Live Demo ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- AI Project 2: NLP Project -->
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/projects/nlp-project.png" alt="NLP Processing Pipeline" class="project-img">
+                <span class="media-label">NLP & DEEP LEARNING</span>
+              </div>
+              <div class="project-body">
+                <div class="project-topline"><span>02</span><span>Python</span></div>
+                <h3 data-i18n="project.nlp.title">Text Summarization — Extractive & Abstractive Approaches</h3>
+                <p data-i18n="project.nlp.desc">A structured NLP pipeline comparing TF-IDF extractive summarization and BART abstractive summarization with a full-featured Streamlit web app interface.</p>
+                <div class="project-tags"><span>Python</span><span>NLP</span><span>NLTK</span><span>Deep Learning</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/Nesma-h/NLP-Project" target="_blank" rel="noopener noreferrer" data-i18n="common.github">GitHub Repo ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- AI Project 3: Garbage Classification NN -->
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/projects/garbage-nn.png" alt="Garbage Classification NN" class="project-img">
+                <span class="media-label">DEEP LEARNING / STREAMLIT</span>
+              </div>
+              <div class="project-body">
+                <div class="project-topline"><span>03</span><span>Python & Streamlit</span></div>
+                <h3 data-i18n="project.garbage.title">Garbage Classification NN Platform</h3>
+                <p data-i18n="project.garbage.desc">Deep Learning computer vision application that classifies waste items into categories using Neural Networks, integrated into an interactive Streamlit web dashboard.</p>
+                <div class="project-tags"><span>Python</span><span>Neural Networks</span><span>Computer Vision</span><span>Streamlit</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/Nesma-h/Garbage-Classification--NN-Project" target="_blank" rel="noopener noreferrer" data-i18n="common.github">GitHub Repo ↗</a>
+                  <a href="https://nn-project-wezk8czhyz9xhohvpyyfhf.streamlit.app/" target="_blank" rel="noopener noreferrer" data-i18n="common.live">Live Demo ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- AI Project 4: Dots and Boxes AI Game -->
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/projects/dots-and-boxes.png" alt="Dots and Boxes AI Game" class="project-img">
+                <span class="media-label">ARTIFICIAL INTELLIGENCE</span>
+              </div>
+              <div class="project-body">
+                <div class="project-topline"><span>04</span><span>C++</span></div>
+                <h3 data-i18n="project.p2.title">Game AI Agent: Dots & Boxes</h3>
+                <p data-i18n="project.p2.desc">Implemented an autonomous game-playing agent using Adversarial Search (Minimax algorithm with Alpha-Beta Pruning) for optimal decision-making and move prediction.</p>
+                <div class="project-tags"><span>C++</span><span>Minimax</span><span>Alpha-Beta Pruning</span><span>Algorithms</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/Nesma-h/Dots-and-Boxs-Ai-Game-" target="_blank" rel="noopener noreferrer" data-i18n="common.github">GitHub Repo ↗</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
         </div>
 
       </div>
     </section>
 
-    <!-- ==================== EXPERIENCE ==================== -->
     <!-- ==================== EXPERIENCE & ACTIVITIES ==================== -->
     <section class="section" id="experience">
       <div class="container">
 
         <div class="section-heading centered reveal">
-          <span class="eyebrow" data-i18n="experience.eyebrow">
-            EXPERIENCE & ACTIVITIES
-          </span>
-
-          <h2 data-i18n="experience.title">
-            More than just coding.
-          </h2>
-
+          <span class="eyebrow" data-i18n="experience.eyebrow">EXPERIENCE & ACTIVITIES</span>
+          <h2 data-i18n="experience.title">More than just coding.</h2>
           <p data-i18n="experience.subtitle">
             Experiences, communities, mentoring and competitions that shaped my journey.
           </p>
         </div>
 
-
-        <!-- ==================== STEMATE ==================== -->
+        <!-- STEMATE -->
         <article class="timeline-item reveal">
           <div class="timeline-dot"></div>
-
           <div class="timeline-date">
             Jun 2026 — <span data-i18n="experience.present">Present</span>
           </div>
 
           <div class="timeline-card experience-card">
-
             <div class="experience-image">
               <img src="assets/experience/stemate.jpg" alt="Nesma Hesham - Stemate Coding Instructor">
             </div>
-
             <div class="experience-content">
-              <span class="timeline-type" data-i18n="experience.role">
-                CODING INSTRUCTOR
-              </span>
-
+              <span class="timeline-type" data-i18n="experience.role">CODING INSTRUCTOR</span>
               <h3>Stemate</h3>
-
               <p data-i18n="experience.desc">
                 Teaching Scratch, Python, HTML, CSS, JavaScript, MIT App Inventor,
                 PictoBlox, LEGO Spike Essential/Prime, and introductory Machine
                 Learning concepts.
               </p>
-
               <div class="experience-tags">
                 <span>Teaching</span>
                 <span>Coding</span>
@@ -431,74 +451,50 @@
                 <span>Mentoring</span>
               </div>
             </div>
-
           </div>
         </article>
 
-
-        <!-- ==================== GDG ==================== -->
+        <!-- GDG -->
         <article class="timeline-item reveal">
           <div class="timeline-dot"></div>
-
-          <div class="timeline-date">
-            2026
-          </div>
+          <div class="timeline-date">2026</div>
 
           <div class="timeline-card experience-card">
-
             <div class="experience-image">
               <img src="assets/experience/gdg-mentor.jpg" alt="Nesma Hesham - Front-End Mentor at GDG">
             </div>
-
             <div class="experience-content">
-              <span class="timeline-type">
-                FRONT-END MENTOR
-              </span>
-
+              <span class="timeline-type">FRONT-END MENTOR</span>
               <h3>GDG on Campus</h3>
-
               <p data-i18n="experience.gdg">
                 Participating as a Front-End Mentor, helping learners understand
                 web development concepts and sharing practical knowledge.
               </p>
-
               <div class="experience-tags">
                 <span>Front-End</span>
                 <span>Mentoring</span>
                 <span>Community</span>
               </div>
             </div>
-
           </div>
         </article>
 
-
-        <!-- ==================== ICPC COACH ==================== -->
+        <!-- ICPC COACH -->
         <article class="timeline-item reveal">
           <div class="timeline-dot"></div>
-
-          <div class="timeline-date">
-            2026
-          </div>
+          <div class="timeline-date">2026</div>
 
           <div class="timeline-card experience-card">
-
             <div class="experience-image">
               <img src="assets/experience/icpc-coach.jpg" alt="Nesma Hesham - ICPC Benha Community Coach">
             </div>
-
             <div class="experience-content">
-              <span class="timeline-type">
-                ICPC COACH
-              </span>
-
+              <span class="timeline-type">ICPC COACH</span>
               <h3>ICPC Benha Community</h3>
-
               <p data-i18n="experience.icpcCoach">
                 Participating as a coach in ICPC Benha Community and supporting
                 students in problem solving and competitive programming.
               </p>
-
               <div class="experience-tags">
                 <span>Problem Solving</span>
                 <span>C++</span>
@@ -506,104 +502,67 @@
                 <span>Coaching</span>
               </div>
             </div>
-
           </div>
         </article>
 
-
-        <!-- ==================== ICPC COMPETITIONS ==================== -->
+        <!-- ICPC COMPETITIONS -->
         <div class="competition-section reveal">
-
           <div class="competition-heading">
             <span class="eyebrow">ICPC</span>
-
-            <h3 data-i18n="experience.icpcTitle">
-              ICPC Competition Journey
-            </h3>
-
+            <h3 data-i18n="experience.icpcTitle">ICPC Competition Journey</h3>
             <p data-i18n="experience.icpcText">
               Participated in ICPC competitions three times, gaining valuable
               experience in teamwork, problem solving and competitive programming.
             </p>
           </div>
 
-
           <div class="competition-gallery">
-
-            <!-- Competition 1 -->
             <article class="competition-card">
               <div class="competition-image">
                 <img src="assets/experience/icpc-1.jpg" alt="ICPC Benha Competition - Participation 1">
                 <span>01</span>
               </div>
-
               <div class="competition-info">
                 <h4>ICPC Competition</h4>
-                <p data-i18n="experience.icpc1">
-                  First participation
-                </p>
+                <p data-i18n="experience.icpc1">First participation</p>
               </div>
             </article>
 
-
-            <!-- Competition 2 -->
             <article class="competition-card">
               <div class="competition-image">
                 <img src="assets/experience/icpc-2.jpg" alt="ICPC Benha Competition - Participation 2">
                 <span>02</span>
               </div>
-
               <div class="competition-info">
                 <h4>ICPC Competition</h4>
-                <p data-i18n="experience.icpc2">
-                  Second participation
-                </p>
+                <p data-i18n="experience.icpc2">Second participation</p>
               </div>
             </article>
 
-
-            <!-- Competition 3 -->
             <article class="competition-card">
               <div class="competition-image">
                 <img src="assets/experience/icpc-3.jpg" alt="ICPC Benha Competition - Participation 3">
                 <span>03</span>
               </div>
-
               <div class="competition-info">
                 <h4>ICPC Competition</h4>
-                <p data-i18n="experience.icpc3">
-                  Third participation - as a coach
-                </p>
+                <p data-i18n="experience.icpc3">Third participation - as a coach</p>
               </div>
             </article>
-
           </div>
         </div>
 
-
-        <!-- ==================== OTHER ACTIVITIES ==================== -->
+        <!-- OTHER ACTIVITIES -->
         <div class="activities reveal">
-
-          <h3 data-i18n="activities.title">
-            Leadership & Activities
-          </h3>
-
+          <h3 data-i18n="activities.title">Leadership & Activities</h3>
           <div class="activity-grid">
-
             <span>Frontend Mentor — GDG on Campus</span>
-
             <span>ICPC Benha Community — Coach</span>
-
             <span>ICPC Competition Participant ×3</span>
-
             <span>Frontend Member — IEEE BUB Student Branch</span>
-
             <span>PR Member — IEEE BUB Student Branch</span>
-
             <span>Project Management — Enactus</span>
-
           </div>
-
         </div>
 
       </div>
@@ -643,73 +602,38 @@
           </p>
 
           <div class="social-links">
-            <a href="https://www.linkedin.com/in/nesmaa-heesham" target="_blank" rel="noopener noreferrer">LinkedIn
-              ↗</a>
+            <a href="https://www.linkedin.com/in/nesmaa-heesham" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
             <a href="https://github.com/Nesma-h" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
             <a href="https://codeforces.com/profile/N_esma" target="_blank" rel="noopener noreferrer">Codeforces ↗</a>
             <a href="mailto:nesmaahh1@gmail.com">Email ↗</a>
           </div>
         </div>
 
-        <!-- HTML-only structure: connect this form to Formspree/Netlify/etc. if you want submissions. -->
         <form class="contact-form reveal" action="https://formspree.io/f/xnpqbqez" method="POST">
-
           <div class="form-row">
-
             <label>
-
-              <span data-i18n="form.name">
-                Name
-              </span>
-
-              <input type="text" name="name" placeholder="Your name" data-i18n-placeholder="form.namePlaceholder"
-                required>
-
+              <span data-i18n="form.name">Name</span>
+              <input type="text" name="name" placeholder="Your name" data-i18n-placeholder="form.namePlaceholder" required>
             </label>
-
-
             <label>
-
-              <span data-i18n="form.email">
-                Email
-              </span>
-
-              <input type="email" name="email" placeholder="you@example.com"
-                data-i18n-placeholder="form.emailPlaceholder" required>
-
+              <span data-i18n="form.email">Email</span>
+              <input type="email" name="email" placeholder="you@example.com" data-i18n-placeholder="form.emailPlaceholder" required>
             </label>
-
           </div>
 
-
           <label>
-
-            <span data-i18n="form.subject">
-              Subject
-            </span>
-
-            <input type="text" name="subject" placeholder="How can I help?"
-              data-i18n-placeholder="form.subjectPlaceholder" required>
-
+            <span data-i18n="form.subject">Subject</span>
+            <input type="text" name="subject" placeholder="How can I help?" data-i18n-placeholder="form.subjectPlaceholder" required>
           </label>
 
-
           <label>
-
-            <span data-i18n="form.message">
-              Message
-            </span>
-
-            <textarea name="message" rows="6" placeholder="Write your message..."
-              data-i18n-placeholder="form.messagePlaceholder" required></textarea>
-
+            <span data-i18n="form.message">Message</span>
+            <textarea name="message" rows="6" placeholder="Write your message..." data-i18n-placeholder="form.messagePlaceholder" required></textarea>
           </label>
-
 
           <button class="btn btn-primary form-submit" type="submit" data-i18n="form.send">
             Send Message ↗
           </button>
-
         </form>
       </div>
     </section>
