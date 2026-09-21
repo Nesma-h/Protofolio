@@ -1,7 +1,7 @@
 /* =========================================================
    NESMA HESHAM PORTFOLIO
    Main stylesheet — Warm Coffee & Espresso Palette ☕
-   Smooth & Modern Transitions
+   Smooth Transitions & Modern Bow Header Logo
    ========================================================= */
 
 /* ---------- Design Tokens (Coffee & Latte Theme) ---------- */
@@ -112,7 +112,7 @@ button {
   transition: background var(--transition);
 }
 
-/* ---------- Header ---------- */
+/* ---------- Header & Navbar ---------- */
 .site-header {
   position: fixed;
   inset: 0 0 auto;
@@ -141,34 +141,51 @@ button {
   gap: 25px;
 }
 
+/* ---------- Brand Logo: Bow First + Nesma + Dot 🎀 ---------- */
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px; /* المسافة بين الفيونكة والاسم */
   font-weight: 800;
-  font-size: 1.12rem;
-  letter-spacing: -0.03em;
-  flex-shrink: 0;
-}
-
-.brand-mark {
-  width: 38px;
-  height: 38px;
-  display: grid;
-  place-items: center;
-  color: white;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-2));
-  box-shadow: 0 8px 20px rgba(140, 90, 60, 0.25);
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+  color: var(--text);
   transition: transform var(--transition);
 }
 
-.brand:hover .brand-mark {
-  transform: rotate(5deg) scale(1.05);
+.brand:hover {
+  transform: translateY(-1px);
+}
+
+.brand-bow-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* حجم صورة الفيونكة نسبياً */
+.brand-bow-img {
+  width: 32px; /* حجم الفيونكة الأنيق والكبير نسبياً */
+  height: auto;
+  object-fit: contain;
+  transition: transform var(--transition);
+  filter: sepia(0.5) hue-rotate(330deg) saturate(1.2); /* يتلاءم مع ألوان القهوة */
+}
+
+.brand:hover .brand-bow-img {
+  transform: rotate(-10deg) scale(1.1);
+}
+
+.brand-name {
+  font-weight: 800;
+  line-height: 1;
 }
 
 .brand-dot {
   color: var(--primary);
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-inline-start: -4px;
 }
 
 .nav-links {
