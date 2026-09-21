@@ -14,12 +14,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menuToggle");
     const navLinks = document.getElementById("navLinks");
     const header = document.querySelector(".site-header");
+    const contactForm = document.getElementById("contactForm");
 
     /* =========================================
        JAVASCRIPT READY FLAG
        ========================================= */
 
     html.classList.add("js-ready");
+
+    /* =========================================
+       FORM RESET ON SUBMIT / PAGE SHOW
+       ========================================= */
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", function () {
+            setTimeout(() => {
+                contactForm.reset();
+            }, 500);
+        });
+    }
+
+    window.addEventListener("pageshow", function () {
+        if (contactForm) {
+            contactForm.reset();
+        }
+    });
 
     /* =========================================
        DARK / LIGHT MODE TOGGLE
@@ -135,14 +154,14 @@ document.addEventListener("DOMContentLoaded", function () {
             "skills.eyebrow": "TECH STACK",
             "skills.title": "Tools I use to bring ideas to life.",
             "skills.frontend": "Front-End Development",
-            "skills.ai": "AI & Machine Learning",
+            "skills.ai": "AI Tools & Frameworks",
             "skills.cs": "Computer Science",
             "skills.tools": "Tools & Platforms",
 
             "projects.eyebrow": "SELECTED WORK",
             "projects.title": "Featured Engineering Projects",
-            "projects.subtitle": "A showcase of AI models, algorithmic solutions, and production-ready web applications.",
-            "projects.cat_ai": "AI & Data Science Engineering",
+            "projects.subtitle": "A showcase of AI tools, web applications, and software solutions.",
+            "projects.cat_ai": "AI & Data Science Applications",
             "projects.cat_web": "Web Development & Frontend Engineering",
 
             "project.p4.title": "Full-Stack React E-Commerce Platform",
@@ -167,16 +186,16 @@ document.addEventListener("DOMContentLoaded", function () {
             "project.depi12.desc": "Implemented responsive interface components utilizing modern CSS Grid/Flexbox architectures and fluid design standards during the DEPI Front-End track.",
 
             "project.p1.title": "Student Performance Predictive Analytics",
-            "project.p1.desc": "A machine learning project designed to predict student academic performance using supervised learning models, implementing predictive systems for pass/fail classification and grade estimation.",
+            "project.p1.desc": "A data analytics and predictive system designed to evaluate student academic performance and provide grade estimates using Python and Scikit-Learn.",
 
-            "project.nlp.title": "Text Summarization — Extractive & Abstractive Approaches",
-            "project.nlp.desc": "A structured NLP pipeline comparing TF-IDF extractive summarization and BART abstractive summarization with a full-featured Streamlit web app interface.",
+            "project.nlp.title": "Text Summarization Platform",
+            "project.nlp.desc": "An intelligent text summarization system built with Python NLP libraries and packaged with a full-featured Streamlit web app interface.",
 
-            "project.garbage.title": "Garbage Classification NN Platform",
-            "project.garbage.desc": "Deep Learning computer vision application that classifies waste items into categories using Neural Networks, integrated into an interactive Streamlit web dashboard.",
+            "project.garbage.title": "Garbage Classification Platform",
+            "project.garbage.desc": "An intelligent vision application built with TensorFlow and OpenCV that classifies waste items, integrated into an interactive Streamlit web dashboard.",
 
-            "project.p2.title": "Game AI Agent: Dots & Boxes",
-            "project.p2.desc": "Implemented an autonomous game-playing agent using Adversarial Search (Minimax algorithm with Alpha-Beta Pruning) for optimal decision-making and move prediction.",
+            "project.p2.title": "Smart Game Engine: Dots & Boxes",
+            "project.p2.desc": "Implemented an autonomous game engine in C++ for optimal decision-making, game state calculation, and move prediction.",
 
             "common.live": "Live Demo ↗",
             "common.github": "GitHub Repo ↗",
@@ -185,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "experience.title": "Learning, building, and helping others grow.",
             "experience.present": "Present",
             "experience.role": "CODING INSTRUCTOR",
-            "experience.desc": "Teaching Scratch, Python, HTML, CSS, JavaScript, MIT App Inventor, PictoBlox, LEGO Spike Essential/Prime, and introductory Machine Learning concepts.",
+            "experience.desc": "Teaching Scratch, Python, HTML, CSS, JavaScript, MIT App Inventor, PictoBlox, LEGO Spike Essential/Prime, and introductory AI concepts.",
             "experience.subtitle": "Experiences, communities, mentoring and competitions that shaped my journey.",
             "experience.gdg": "Participating as a Front-End Mentor, helping learners understand web development concepts and sharing practical knowledge.",
             "experience.icpcCoach": "Participating as a coach in ICPC Benha Community and supporting students in problem solving and competitive programming.",
@@ -260,14 +279,14 @@ document.addEventListener("DOMContentLoaded", function () {
             "skills.eyebrow": "التقنيات",
             "skills.title": "أدوات بستخدمها عشان أحوّل الأفكار لحاجات حقيقية.",
             "skills.frontend": "تطوير الـFront-End",
-            "skills.ai": "الذكاء الاصطناعي والـMachine Learning",
+            "skills.ai": "أدوات ومكتبات الذكاء الاصطناعي",
             "skills.cs": "أساسيات علوم الحاسب",
             "skills.tools": "الأدوات والمنصات",
 
             "projects.eyebrow": "أعمال مختارة",
             "projects.title": "مشاريع هندسية بارزة",
-            "projects.subtitle": "استعراض لنماذج الذكاء الاصطناعي، الحلول الخوارزمية، وتطبيقات الويب المتكاملة.",
-            "projects.cat_ai": "هندسة الذكاء الاصطناعي وعلوم البيانات",
+            "projects.subtitle": "استعراض لأدوات الذكاء الاصطناعي، تطبيقات الويب، والحلول البرمجية.",
+            "projects.cat_ai": "تطبيقات الذكاء الاصطناعي وعلوم البيانات",
             "projects.cat_web": "تطوير الويب وهندسة الواجهات (Front-End)",
 
             "project.p4.title": "منصة تجارة إلكترونية متكاملة بـ React",
@@ -292,16 +311,16 @@ document.addEventListener("DOMContentLoaded", function () {
             "project.depi12.desc": "تنفيذ مكونات واجهة مستخدم متجاوبة باستخدام تقنيات CSS Grid وFlexbox المعاصرة ومعايير التصميم المرن ضمن تدريب DEPI.",
 
             "project.p1.title": "منظومة التنبؤ بأداء الطلاب والتحليل التنبؤي",
-            "project.p1.desc": "تطوير نماذج تعلّم آلي مُشرف عليها (Supervised ML) لتحليل المؤشرات الأكاديمية واستكشاف البيانات والتنبؤ بالنتائج والدرجات بدقة عالية.",
+            "project.p1.desc": "تطوير تطبيق تحليلي ونظام تنبؤي لتقييم الأداء الأكاديمي للطلاب باستخدام مكتبات Python وScikit-Learn.",
 
-            "project.nlp.title": "تلخيص النصوص — الطرق الاستخراجية والتجريدية (NLP)",
-            "project.nlp.desc": "خط معالجة لغات طبيعية يربط بين تقنية TF-IDF الاستخراجية ونموذج BART التجريدي مع واجهة تفاعلية عبر Streamlit.",
+            "project.nlp.title": "منصة تلخيص النصوص الذكية",
+            "project.nlp.desc": "تطوير نظام معالجة لغات طبيعية لتلخيص النصوص باستخدام مكتبات Python مع واجهة تفاعلية عبر Streamlit.",
 
-            "project.garbage.title": "منصة تصنيف النفايات بالشبكات العصبية",
-            "project.garbage.desc": "تطبيق رؤية حاسوبية يعتمد على التعلم العميق والشبكات العصبية لتصنيف المخلفات مع لوحة تحكم تفاعلية عبر Streamlit.",
+            "project.garbage.title": "منصة تصنيف النفايات الذكية",
+            "project.garbage.desc": "تطبيق رؤية حاسوبية ذكي مدمج بأدوات TensorFlow وOpenCV لتصنيف المخلفات مع لوحة تحكم تفاعلية عبر Streamlit.",
 
-            "project.p2.title": "العميل الذكي للعبة Dots & Boxes",
-            "project.p2.desc": "برمجة خصم ذكي أوتوماتيكي باستخدام البحث التنافسي (خوارزمية Minimax مع تقليم Alpha-Beta) لتقديم قرارات وحركات مثالية أثناء اللعب.",
+            "project.p2.title": "مُحرك الألعاب الذكي: Dots & Boxes",
+            "project.p2.desc": "برمجة مُحرك ألعاب ذكي بـ C++ لحساب حالات اللعب وتقديم قرارات وحركات مثالية أوتوماتيكيًا.",
 
             "common.live": "المشروع Live ↗",
             "common.github": "GitHub Repo ↗",
@@ -310,7 +329,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "experience.title": "بتعلم وببني مشاريع وبساعد غيري يتعلم.",
             "experience.present": "حتى الآن",
             "experience.role": "CODING INSTRUCTOR",
-            "experience.desc": "بدرّس Scratch وPython وHTML وCSS وJavaScript وMIT App Inventor وPictoBlox وLEGO Spike Essential/Prime، بالإضافة لمفاهيم Machine Learning للمبتدئين.",
+            "experience.desc": "بدرّس Scratch وPython وHTML وCSS وJavaScript وMIT App Inventor وPictoBlox وLEGO Spike Essential/Prime، بالإضافة لمفاهيم أدوات الذكاء الاصطناعي للمبتدئين.",
             "experience.subtitle": "تجارب ومجتمعات وMentoring ومسابقات كان ليها دور كبير في رحلتي.",
             "experience.gdg": "شاركت كـ Front-End Mentor في GDG، وساعدت المتعلمين في فهم مفاهيم تطوير الويب ومشاركة الخبرات العملية.",
             "experience.icpcCoach": "شاركت كـ Coach في ICPC Benha Community، وساعدت الطلاب في الـProblem Solving والـCompetitive Programming.",
